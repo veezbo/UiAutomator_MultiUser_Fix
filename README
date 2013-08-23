@@ -1,0 +1,13 @@
+Fixes the problem UiAutomator has with multiple users in the Android Open Source Project.
+
+Support for changing the necessary file in the SDK's is included, but it is uncertain whether it is even possible to rebuild the SDK with modifications (as is necessary).
+
+INSTRUCTIONS:
+	1. Place the script in your AOSP directory.
+	2. Install Python if you don't have it, and install the pyparsing library as well (recommended: using pip).
+	3. Run the script, and follow the prompts.
+	4. Rebuild AOSP (I've provided build scripts in my Android_Scripts repo, which you can use as you desire)
+	5. Now, uiautomator should have multi-user support on both devices and emulators built or flashed from AOSP.
+
+WORD OF CAUTION:
+	Please be aware that this is not an official solution. Furthermore, this is a workaround that directly modifies internal AOSP code. It is highly recommended (and you will be given a prompt to do so) that you backup the file that is modified, so that you can replace it after you've finished using UiAutomator.
