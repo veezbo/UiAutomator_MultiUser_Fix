@@ -12,7 +12,7 @@ and the AOSP Patch I submitted (currently in the reviewing process): https://and
 INSTRUCTIONS (taken from my comment in the bug report):
 	In the repo, I've included my locally-built uiautomator.jar files with the fix applied (built for generic, maguro, and manta). Pick the one you need and see if it works for you. Also, I think you'll want to rename the .jar file back to uiautomator.jar before doing anything with it.
 
-	Otherwise, you can follow these steps for downloading and applying the fix to AOSP: 
+	Otherwise, follow these steps for downloading and applying the fix to AOSP: 
 	1) Initialize your environment here: http://source.android.com/source/initializing.html
 	2) Download the source: http://source.android.com/source/downloading.html#initializing-a-repo-client  (I would recommend running repo sync -j#, where # is at least the number of cores you have on your computer).
 	3) You'll then want to modify the Launcher.java file as I have in the bug fix.
