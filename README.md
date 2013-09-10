@@ -9,7 +9,7 @@ The prior fix that relied on the uiautomator_fix.py script is no longer necessar
 
 The current fix identifies the problem, and fixes that problem directly in a way that will not have side effects on other applications.
 
-For more information, see the [bug report] [1] 
+For more information, see the [bug report] [1]
 and the [AOSP patch] [2] I submitted (currently in the reviewing process).
 
   [1]: http://code.google.com/p/android/issues/detail?id=58987 "Bug Report"
@@ -32,9 +32,7 @@ Otherwise, follow these steps for downloading and applying the fix to AOSP:
   [2]: http://source.android.com/source/downloading.html#initializing-a-repo-client "source"
   [3]: http://source.android.com/source/building-running.html "building"
   [4]: http://source.android.com/source/building-devices.html "flash_device"
-  [5]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"
-
-
+  [5]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"  
 
 
 ### Using the prior fix with uiautomator_fix.py (NOT RECOMMENDED)
