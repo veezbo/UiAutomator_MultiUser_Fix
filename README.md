@@ -34,6 +34,7 @@ Otherwise, follow these steps for downloading and applying the fix to AOSP:
   [4]: http://source.android.com/source/building-devices.html "flash_device"
   [5]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"  
 
+---
 
 ### Using the prior fix with uiautomator_fix.py (NOT RECOMMENDED)
 
