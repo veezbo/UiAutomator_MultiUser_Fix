@@ -9,11 +9,11 @@ The prior fix that relied on the uiautomator_fix.py script is no longer necessar
 
 The current fix identifies the problem, and fixes that problem directly in a way that will not have side effects on other applications.
 
-For more information, see the [bug report] [1]
-and the [AOSP Patch] [2] I submitted (currently in the reviewing process)
-	
-	[1]: http://code.google.com/p/android/issues/detail?id=58987 "Bug Report"
-	[2]: https://android-review.googlesource.com/64730 "AOSP Patch"
+For more information, see the [bug report] [1] 
+and the [AOSP patch] [2] I submitted (currently in the reviewing process).
+
+  [1]: http://code.google.com/p/android/issues/detail?id=58987 "Bug Report"
+  [2]: https://android-review.googlesource.com/64730 "AOSP Patch"
 
 Instructions
 ------------
