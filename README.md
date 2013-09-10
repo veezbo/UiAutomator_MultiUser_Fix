@@ -35,6 +35,8 @@ Otherwise, follow these steps for downloading and applying the fix to AOSP:
   [5]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"
 
 
+
+
 ### Using the prior fix with uiautomator_fix.py (NOT RECOMMENDED)
 
 Support for changing the necessary file in the SDK's is included, but it is uncertain whether it is even possible to rebuild the SDK with modifications (as is necessary).
