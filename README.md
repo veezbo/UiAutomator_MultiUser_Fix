@@ -22,8 +22,31 @@ In the repo, I've included my locally-built uiautomator.jar files with the fix a
 
 Otherwise, follow these steps for downloading and applying the fix to AOSP:
 
-1. Initialize your environment here: http://source.android.com/source/initializing.html
-2. Download the source: http://source.android.com/source/downloading.html#initializing-a-repo-client  (I would recommend running repo sync -j#, where # is at least the number of cores you have on your computer).
+1. Initialize your [environment] [1]. 
+2. Download the [source] [2]. I would recommend running repo sync -j#, where # is at least the number of cores you have on your computer.
 3. You'll then want to modify the Launcher.java file as I have in the bug fix.
-4. Then, you'll need to build it: http://source.android.com/source/building-running.html  (alternatively, you can use the script under my Android_Scripts repo called build.sh).
-5. Finally, you need to flash your device: http://source.android.com/source/building-devices.html  (alternatively, you can use my flash.sh script), or run the emulator (my script device.sh runs a basic emulated device).
+4. Then, you'll need to [build it] [3]. Alternatively, you can use the script under my Android_Scripts repo called build.sh.
+5. Finally, you need to [flash your device] [4] or [run the emulator] [5]. You can also just use my device.sh or emulator.sh scripts.
+
+  [1]: http://source.android.com/source/initializing.html "environment"
+  [2]: http://source.android.com/source/downloading.html#initializing-a-repo-client "source"
+  [3]: http://source.android.com/source/building-running.html "building"
+  [4]: http://source.android.com/source/building-devices.html "flash_device"
+  [5]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"
+
+
+### Using the prior fix with uiautomator_fix.py (NOT RECOMMENDED)
+
+Support for changing the necessary file in the SDK's is included, but it is uncertain whether it is even possible to rebuild the SDK with modifications (as is necessary).
+
+#### Instructions
+
+1. Place the script in your AOSP directory.
+2. Install Python if you don't have it, and install the pyparsing library as well (recommended: using pip).
+3. Run the script, and follow the prompts.
+4. Rebuild AOSP (I've provided build scripts in my Android_Scripts repo, which you can use as you desire)
+5. Now, uiautomator should have multi-user support on both devices and emulators built or flashed from AOSP.
+
+#### WARNING
+
+Please be aware that this is not an official solution. Furthermore, this is a workaround that directly modifies internal AOSP code. It is highly recommended (and you will be given a prompt to do so) that you backup the file that is modified, so that you can replace it after you've finished using UiAutomator.
