@@ -22,17 +22,17 @@ In the repo, I've included my locally-built uiautomator.jar files with the fix a
 
 Otherwise, follow these steps for downloading and applying the fix to AOSP:
 
-1. Initialize your [environment] [1]. 
-2. Download the [source] [2]. I would recommend running repo sync -j#, where # is at least the number of cores you have on your computer.
+1. Initialize your [environment] [3]. 
+2. Download the [source] [4]. I would recommend running repo sync -j#, where # is at least the number of cores you have on your computer.
 3. You'll then want to modify the Launcher.java file as I have in the bug fix.
-4. Then, you'll need to [build it] [3]. Alternatively, you can use the script under my Android_Scripts repo called build.sh.
-5. Finally, you need to [flash your device] [4] or [run the emulator] [5]. You can also just use my device.sh or emulator.sh scripts.
+4. Then, you'll need to [build it] [5]. Alternatively, you can use the script under my Android_Scripts repo called build.sh.
+5. Finally, you need to [flash your device] [6] or [run the emulator] [7]. You can also just use my device.sh or emulator.sh scripts.
 
-  [1]: http://source.android.com/source/initializing.html "environment"
-  [2]: http://source.android.com/source/downloading.html#initializing-a-repo-client "source"
-  [3]: http://source.android.com/source/building-running.html "building"
-  [4]: http://source.android.com/source/building-devices.html "flash_device"
-  [5]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"  
+  [3]: http://source.android.com/source/initializing.html "environment"
+  [4]: http://source.android.com/source/downloading.html#initializing-a-repo-client "source"
+  [5]: http://source.android.com/source/building-running.html "building"
+  [6]: http://source.android.com/source/building-devices.html "flash_device"
+  [7]: http://developer.android.com/tools/help/emulator.html#startup-options "run_emulator"  
 
 ---
 
